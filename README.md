@@ -526,7 +526,7 @@ Default value: `false`
 
 #### remove-stale-from-exempt-items
 
-If set to `true`, issues or pull request with an [exempt-issue-labels](#exempt-issue-labels) or [exempt-pr-labels](#exempt-pr-labels)
+If set to `true`, issues or pull requests with an [exempt-issue-labels](#exempt-issue-labels) or [exempt-pr-labels](#exempt-pr-labels)
 that are no longer stale will have the stale label removed.
 
 Default value: `false`

@@ -189,7 +189,6 @@ export class IssuesProcessor {
       )}`
     );
 
-
     // calculate string based messages for this issue
     const staleMessage: string = issue.isPullRequest
       ? this.options.stalePrMessage
@@ -343,7 +342,7 @@ export class IssuesProcessor {
     if (hasExemptLabel) {
       // Determine whether we want to manage an exempt item
       const isIssueStale =
-      isRemoveStaleFromExemptItemEnabled &&
+        isRemoveStaleFromExemptItemEnabled &&
         (await this._isIssueStale(issue, staleLabel, staleMessage));
 
       if (isIssueStale) {
